@@ -7,7 +7,7 @@ const Register = () => {
   return (
     <>
       <MainContent>
-        <Logo />
+        <Logo top={"32px"} />
         <h2>Cadastro</h2>
 
         <form>
@@ -36,6 +36,7 @@ const Register = () => {
             placeholder={"Confirme sua senha"}
           />
 
+          <h3>Termos de uso e privacidade</h3>
           <div className="divInputRadio">
             <input name="privacy" id="privacy" type="checkbox" defaultChecked />
             <label>

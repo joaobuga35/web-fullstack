@@ -1,9 +1,15 @@
 import logo from "../../images/png/logo.png";
 import FigureLogo from "./styles";
 
-const Logo = () => {
+const Logo = ({ top, bottom, leftP, rightP, logoPosition }) => {
   return (
-    <FigureLogo>
+    <FigureLogo
+      top={top}
+      bottom={bottom}
+      leftP={leftP}
+      rightP={rightP}
+      logoPosition={logoPosition}
+    >
       <img src={logo} alt="logo" />
     </FigureLogo>
   );

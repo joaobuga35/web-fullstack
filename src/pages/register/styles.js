@@ -9,6 +9,13 @@ const MainContent = styled.main`
     margin-bottom: 20px;
   }
 
+  h3 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 22px;
+  }
+
   form {
     margin-bottom: 42px;
     .divInputRadio {
@@ -22,7 +29,7 @@ const MainContent = styled.main`
       label {
         font-size: 12px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 20px;
 
         &::before {

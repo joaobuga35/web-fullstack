@@ -6,6 +6,9 @@ const ButtonBlue = styled.button`
   align-items: center;
   color: var(--color-white);
   width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  margin-top: ${(props) => props.top};
+  margin-bottom: ${(props) => props.bottom};
   border-radius: 60px;
   background-color: var(--color-primary);
 `;

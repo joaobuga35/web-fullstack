@@ -42,10 +42,19 @@ export default createGlobalStyle`
   h1, h2, h3, h4, h5, h6, strong {
     font-weight: 500;
   }
+  h2 {
+    color: #476EE6;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.72px;
+  }
   ul {
     list-style: none;
   }
   button {
+    border: none;
     cursor: pointer;
   }
 `;

@@ -1,5 +1,6 @@
 import DivInput from "./styles";
 
+// eslint-disable-next-line react/prop-types
 const InputMain = ({ label, inputType, inputName, placeholder }) => {
   return (
     <DivInput>

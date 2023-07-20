@@ -72,10 +72,23 @@ const MainLogin = styled.main`
 
       .imgSteve {
         position: relative;
-        bottom: 70px;
+        bottom: -135px;
       }
     }
   }
 `;
 
-export default MainLogin;
+const DivMissingPassword = styled.div`
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+
+    button {
+      width: 185px;
+    }
+  }
+`;
+
+export { MainLogin, DivMissingPassword };

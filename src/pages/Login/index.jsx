@@ -1,7 +1,7 @@
 import InputMain from "../../components/Input";
 import Logo from "../../components/Logo";
 import ButtonBlue from "../../styles/Buttons/styles";
-import MainLogin from "./styles";
+import { MainLogin, DivMissingPassword } from "./styles";
 import apple from "../../images/png/apple.png";
 import stevejobs from "../../images/png/stevejobs.png";
 
@@ -31,12 +31,12 @@ const Login = () => {
               inputName={"password"}
               placeholder={"Insira sua senha"}
             />
-            <div>
+            <DivMissingPassword>
               <span>Esqueceu a senha?</span>
               <ButtonBlue width={"100%"} height={"40px"} top={"45px"}>
                 Entrar
               </ButtonBlue>
-            </div>
+            </DivMissingPassword>
           </form>
         </section>
       </MainLogin>

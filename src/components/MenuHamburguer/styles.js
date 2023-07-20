@@ -1,4 +1,15 @@
-import { styled } from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const MenuSecret = styled.nav`
   padding-top: 46px;
@@ -6,14 +17,17 @@ const MenuSecret = styled.nav`
   padding-right: 13px;
   margin: 0;
   background-color: #fff;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
   position: absolute;
   top: 0px;
   left: 0px;
   width: 225px;
   height: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
   z-index: 1;
+  animation: ${fadeIn} 0.3s ease;
 
   div {
     display: flex;
@@ -71,11 +85,6 @@ const MenuSecret = styled.nav`
     gap: 19px;
     cursor: pointer;
     margin-top: 225px;
-
-    /* img {
-      filter: invert(70%) sepia(0%) saturate(0%) hue-rotate(231deg)
-        brightness(94%) contrast(94%);
-    } */
 
     span {
       color: var(--gray-400);

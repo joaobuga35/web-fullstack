@@ -1,9 +1,10 @@
+import Header from "../../components/Header";
+
 const Dashboard = () => {
   return (
     <>
-      <main>
-        <h1>Dashboard com main</h1>
-      </main>
+      <Header />
+      <main></main>
     </>
   );
 };

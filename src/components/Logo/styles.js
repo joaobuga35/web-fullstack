@@ -6,8 +6,8 @@ const FigureLogo = styled.figure`
   padding-left: ${(props) => props.leftP};
   padding-right: ${(props) => props.rightP};
 
-  ${({ logoPosition }) => {
-    switch (logoPosition) {
+  ${({ logoposition }) => {
+    switch (logoposition) {
       case "register":
         return css`
           background-color: var(--color-primary);

@@ -31,6 +31,11 @@ export default createGlobalStyle`
     outline:0;
     box-sizing: border-box;
   }
+  body{
+    transition: 0.8s ease;
+    animation: smoothShow 800ms;
+  }
+  
   body,html{
     width: 100vw;
     height: 100vh;
@@ -57,4 +62,16 @@ export default createGlobalStyle`
     border: none;
     cursor: pointer;
   }
+  button:hover{
+    filter: brightness(0.9);
+  }
+
+  @keyframes smoothShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 `;

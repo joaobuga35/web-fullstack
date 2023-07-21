@@ -1,6 +1,6 @@
 import InputMain from "../../components/Input";
 import Logo from "../../components/Logo";
-import ButtonBlue from "../../styles/Buttons/styles";
+import { ButtonBlue } from "../../styles/Buttons/styles";
 import { MainLogin, DivMissingPassword } from "./styles";
 import apple from "../../images/png/apple.png";
 import stevejobs from "../../images/png/stevejobs.png";

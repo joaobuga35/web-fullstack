@@ -52,6 +52,10 @@ const MainContent = styled.main`
     }
   }
 
+  nav {
+    display: none;
+  }
+
   @media (min-width: 414px) {
     section {
       padding-left: 10%;

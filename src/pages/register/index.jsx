@@ -1,6 +1,6 @@
 import InputMain from "../../components/Input/";
 import Logo from "../../components/Logo";
-import ButtonBlue from "../../styles/Buttons/styles.js";
+import { ButtonBlue } from "../../styles/Buttons/styles.js";
 import { MainContent, FormColumn, CenteredButton } from "../Register/styles";
 import apple from "../../images/png/apple.png";
 import stevejobs from "../../images/png/stevejobs.png";

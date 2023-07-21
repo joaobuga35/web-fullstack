@@ -14,6 +14,7 @@ export default createGlobalStyle`
     --gray-300:#3C3C43;
     --gray-200:#A0A0A0;
     --color-border: #D7D7D7;
+    --color-border-2:#E4E4EF;
     --color-error: #EA0000; 
     --color-success: #168821;
     --color-warning: #FFCD07;

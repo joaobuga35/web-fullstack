@@ -1,38 +1,63 @@
-import { Card, DivTitleCard, RadioInput, RadioLabel } from "./styles";
+import {
+  Card,
+  DivText,
+  DivTitleCard,
+  ListPersons,
+  ProfilesLi,
+  RadioButton,
+  RadioInput,
+} from "./styles";
 import points from "../../images/svg/points.svg";
 import profile from "../../images/png/profile.png";
+import { useState } from "react";
 
 const CardOneToOne = () => {
+  const [selectedOption, setSelectedOption] = useState(false);
+
+  const handleOptionChange = (event) => {
+    const { value } = event.target;
+    setSelectedOption((prevOption) => (prevOption === value ? false : value));
+  };
+
   return (
     <Card>
       <DivTitleCard>
-        <RadioLabel>
-          <RadioInput type="radio" name="check" id="check" />
-        </RadioLabel>
+        <RadioButton>
+          <RadioInput
+            type="radio"
+            name="check"
+            id="check"
+            value={"check"}
+            checked={selectedOption}
+            onChange={handleOptionChange}
+          />
+        </RadioButton>
 
-        <div>
+        <DivText>
           <h3>1:1 alinhamento de expectativas</h3>
           <span>13/11/2023 - 09:00-12:30</span>
-        </div>
+        </DivText>
 
         <img src={points} alt="" />
       </DivTitleCard>
 
-      <ul>
-        <li>
+      <ListPersons>
+        <ProfilesLi>
           <span>Organizador</span>
           <h4>
             <img src={profile} alt="imagem de perfil" />
+            Mateus Barbosa
           </h4>
-        </li>
+        </ProfilesLi>
 
-        <li>
+        <ProfilesLi>
           <span>Convidado</span>
           <h4>
             <img src={profile} alt="imagem de perfil" />
+            Mateus Barbosa
           </h4>
-        </li>
-      </ul>
+        </ProfilesLi>
+      </ListPersons>
     </Card>
   );
 };

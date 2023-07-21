@@ -1,5 +1,4 @@
 import CardOneToOne from "../../components/Cards";
-import { Card } from "../../components/Cards/styles";
 import Header from "../../components/Header";
 import search from "../../images/svg/search.svg";
 import { ButtonBlue, ButtonDefault } from "../../styles/Buttons/styles";
@@ -24,6 +23,7 @@ const Dashboard = () => {
       </DivButtonsFilter>
 
       <MainContentDash>
+        <CardOneToOne />
         <CardOneToOne />
       </MainContentDash>
     </>

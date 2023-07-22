@@ -54,7 +54,6 @@ const DivProfile = styled.div`
 
   p {
     color: #000;
-    font-family: Poppins, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;

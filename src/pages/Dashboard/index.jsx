@@ -13,49 +13,59 @@ import {
   SectionTitle,
 } from "./styles";
 import { FiChevronLeft } from "react-icons/fi";
+import { useMediaQuery } from "react-responsive";
+import DesktopLayout from "../../layouts/DesktopLayout";
 
 const Dashboard = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
   return (
     <>
-      <Header />
-      {isSearchOpen && (
-        <SearchContainer>
-          <button onClick={() => setIsSearchOpen(false)}>
-            {" "}
-            <FiChevronLeft />
-          </button>
-          <SearchInput type="text" placeholder="Pesquisar..." />
-        </SearchContainer>
+      {isDesktopOrLaptop ? (
+        <DesktopLayout />
+      ) : (
+        <>
+          {" "}
+          <Header />
+          {isSearchOpen && (
+            <SearchContainer>
+              <button onClick={() => setIsSearchOpen(false)}>
+                {" "}
+                <FiChevronLeft />
+              </button>
+              <SearchInput type="text" placeholder="Pesquisar..." />
+            </SearchContainer>
+          )}
+          <SectionTitle>
+            <h2>Conversas 1:1</h2>
+            <img
+              onClick={() => setIsSearchOpen(true)}
+              src={search}
+              alt="pesquisa"
+            />
+          </SectionTitle>
+          <DivButtonsFilter>
+            <ButtonBlue width={"130px"} height={"24px"}>
+              1:1 Agendadas
+            </ButtonBlue>
+            <ButtonDefault width={"130px"} height={"24px"}>
+              1:1 Realizadas
+            </ButtonDefault>
+          </DivButtonsFilter>
+          <MainContentDash>
+            <section>
+              <CardOneToOne />
+              <CardOneToOne />
+            </section>
+            <section>
+              <CardTalk />
+              <CardNotion />
+            </section>
+          </MainContentDash>
+        </>
       )}
-      <SectionTitle>
-        <h2>Conversas 1:1</h2>
-        <img
-          onClick={() => setIsSearchOpen(true)}
-          src={search}
-          alt="pesquisa"
-        />
-      </SectionTitle>
-
-      <DivButtonsFilter>
-        <ButtonBlue width={"130px"} height={"24px"}>
-          1:1 Agendadas
-        </ButtonBlue>
-        <ButtonDefault width={"130px"} height={"24px"}>
-          1:1 Realizadas
-        </ButtonDefault>
-      </DivButtonsFilter>
-
-      <MainContentDash>
-        <section>
-          <CardOneToOne />
-          <CardOneToOne />
-        </section>
-        <section>
-          <CardTalk />
-          <CardNotion />
-        </section>
-      </MainContentDash>
     </>
   );
 };

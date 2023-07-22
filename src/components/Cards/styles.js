@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 const Card = styled.section`
   padding: 20px;
   border-radius: 10px;
+  height: 188px;
   border: 1px solid var(--color-border);
   background: #fff;
   margin-bottom: 15px;
@@ -14,35 +15,6 @@ const DivTitleCard = styled.div`
   align-items: center;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--color-border-2);
-`;
-
-const RadioInput = styled.input`
-  appearance: none;
-  background-color: #fff;
-  margin: 0;
-  font: inherit;
-  color: currentColor;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &:checked {
-    background-color: #476ee6;
-  }
-`;
-
-const RadioButton = styled.label`
-  width: 23px;
-  height: 23px;
-  border: 2px solid #476ee6;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-  vertical-align: middle;
 `;
 
 const DivText = styled.div`
@@ -97,12 +69,4 @@ const ProfilesLi = styled.li`
   }
 `;
 
-export {
-  Card,
-  DivTitleCard,
-  RadioInput,
-  RadioButton,
-  DivText,
-  ListPersons,
-  ProfilesLi,
-};
+export { Card, DivTitleCard, DivText, ListPersons, ProfilesLi };

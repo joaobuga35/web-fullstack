@@ -1,4 +1,5 @@
 import CardOneToOne from "../../components/Cards";
+import CardTalk from "../../components/Cards/CardTalk";
 import Header from "../../components/Header";
 import search from "../../images/svg/search.svg";
 import { ButtonBlue, ButtonDefault } from "../../styles/Buttons/styles";
@@ -25,6 +26,7 @@ const Dashboard = () => {
       <MainContentDash>
         <CardOneToOne />
         <CardOneToOne />
+        <CardTalk />
       </MainContentDash>
     </>
   );

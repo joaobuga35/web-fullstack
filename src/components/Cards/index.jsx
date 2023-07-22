@@ -1,35 +1,19 @@
-import {
-  Card,
-  DivText,
-  DivTitleCard,
-  ListPersons,
-  ProfilesLi,
-  RadioButton,
-  RadioInput,
-} from "./styles";
+import { Card, DivText, DivTitleCard, ListPersons, ProfilesLi } from "./styles";
 import points from "../../images/svg/points.svg";
 import profile from "../../images/png/profile.png";
-import { useState } from "react";
+
+import { RadioButton, RadioInput } from "../../styles/InputRadio/styles";
 
 const CardOneToOne = () => {
-  const [selectedOption, setSelectedOption] = useState(false);
-
-  const handleOptionChange = (event) => {
-    const { value } = event.target;
-    setSelectedOption((prevOption) => (prevOption === value ? false : value));
-  };
-
   return (
     <Card>
       <DivTitleCard>
         <RadioButton>
           <RadioInput
-            type="radio"
+            type="checkbox"
             name="check"
             id="check"
-            value={"check"}
-            checked={selectedOption}
-            onChange={handleOptionChange}
+            defaultChecked={false}
           />
         </RadioButton>
 

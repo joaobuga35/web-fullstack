@@ -47,10 +47,14 @@ const Dashboard = () => {
       </DivButtonsFilter>
 
       <MainContentDash>
-        <CardOneToOne />
-        <CardOneToOne />
-        <CardTalk />
-        <CardNotion />
+        <section>
+          <CardOneToOne />
+          <CardOneToOne />
+        </section>
+        <section>
+          <CardTalk />
+          <CardNotion />
+        </section>
       </MainContentDash>
     </>
   );

@@ -16,6 +16,11 @@ const DivCardTalk = styled.div`
     padding: 14px 16px;
     border-bottom: 1px solid var(--color-border-2);
   }
+
+  @media (min-width: 768px) {
+    height: 360px;
+    width: 350px;
+  }
 `;
 
 const ListCardTalk = styled.ul`

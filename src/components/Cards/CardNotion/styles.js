@@ -5,7 +5,7 @@ const DivCardNotion = styled.div`
   border: 1px solid var(--color-border);
   background: #fff;
   margin-bottom: 15px;
-  height: auto;
+  height: 400px;
 
   h2 {
     height: 52px;
@@ -15,6 +15,10 @@ const DivCardNotion = styled.div`
     line-height: normal;
     padding: 14px 16px;
     border-bottom: 1px solid var(--color-border-2);
+  }
+  @media (min-width: 768px) {
+    height: 400px;
+    width: 350px;
   }
 `;
 

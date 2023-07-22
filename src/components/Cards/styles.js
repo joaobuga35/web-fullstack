@@ -7,6 +7,11 @@ const Card = styled.section`
   border: 1px solid var(--color-border);
   background: #fff;
   margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    height: 188px;
+    width: 350px;
+  }
 `;
 
 const DivTitleCard = styled.div`
@@ -37,6 +42,16 @@ const DivText = styled.div`
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0.75px;
+  }
+
+  @media (min-width: 375px) {
+    h3 {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 12px;
+    }
   }
 `;
 

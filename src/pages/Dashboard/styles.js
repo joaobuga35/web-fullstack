@@ -39,11 +39,23 @@ const DivButtonsFilter = styled.div`
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 25px;
+
+  @media (min-width: 375px) {
+    justify-content: center;
+    gap: 18px;
+  }
 `;
 
 const MainContentDash = styled.div`
   padding-left: 16px;
   padding-right: 16px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 `;
 
 const SearchContainer = styled.div`

@@ -21,6 +21,10 @@ const DivCardTalk = styled.div`
     height: 360px;
     width: 350px;
   }
+
+  @media (min-width: 1224px) {
+    width: 540px;
+  }
 `;
 
 const ListCardTalk = styled.ul`

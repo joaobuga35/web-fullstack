@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 const fadeInAnimation = keyframes`
   from {
@@ -56,6 +56,15 @@ const MainContentDash = styled.div`
     justify-content: center;
     gap: 30px;
   }
+
+  @media (min-width: 1224px) {
+    min-width: 1000px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+  }
 `;
 
 const SearchContainer = styled.div`
@@ -85,6 +94,20 @@ const SearchContainer = styled.div`
     color: var(--color-primary);
     font-size: 16px;
   }
+
+  ${({ inputDesk }) => {
+    switch (inputDesk) {
+      case "desk":
+        return css`
+          background-color: #f7f9fb;
+          position: static;
+          top: 0;
+          right: 0;
+          z-index: 0;
+          width: 350px;
+        `;
+    }
+  }}
 `;
 
 const SearchInput = styled.input`
@@ -94,6 +117,10 @@ const SearchInput = styled.input`
   width: 90%;
   height: 45px;
   padding: 13px 23px 12px 12px;
+
+  @media (min-width: 1224px) {
+    padding-left: 36px;
+  }
 `;
 
 export {

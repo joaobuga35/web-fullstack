@@ -5,7 +5,7 @@ const SideBar = styled.aside`
   padding-left: 13px;
   padding-right: 13px;
   width: 250px;
-  height: 100vh;
+  height: auto;
   background-color: var(--color-white);
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;

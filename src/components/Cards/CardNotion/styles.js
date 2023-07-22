@@ -20,6 +20,9 @@ const DivCardNotion = styled.div`
     height: 400px;
     width: 350px;
   }
+  @media (min-width: 1224px) {
+    width: 540px;
+  }
 `;
 
 const ContainerTextArea = styled.div`

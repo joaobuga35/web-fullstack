@@ -105,6 +105,14 @@ const SearchContainer = styled.div`
           right: 0;
           z-index: 0;
           width: 350px;
+
+          .icon {
+            position: relative;
+            left: 43px;
+            width: 24px;
+            height: 24px;
+            color: var(--color-primary);
+          }
         `;
     }
   }}

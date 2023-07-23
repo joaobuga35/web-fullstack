@@ -12,6 +12,10 @@ const Card = styled.section`
     height: 188px;
     width: 350px;
   }
+
+  @media (min-width: 1224px) {
+    width: 380px;
+  }
 `;
 
 const DivTitleCard = styled.div`

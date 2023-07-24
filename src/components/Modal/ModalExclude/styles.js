@@ -9,6 +9,14 @@ const DivTitleModalExclude = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  span {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
   .buttonEx {
     cursor: pointer;
   }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import CardOneToOne from "../../components/Cards";
 import CardNotion from "../../components/Cards/CardNotion";
 import CardTalk from "../../components/Cards/CardTalk";
@@ -15,9 +15,14 @@ import {
 import { FiChevronLeft } from "react-icons/fi";
 import { useMediaQuery } from "react-responsive";
 import DesktopLayout from "../../layouts/DesktopLayout";
+import Modal from "../../components/Modal";
+import { AuthContext } from "../../context/authcontext";
+import ModalExclude from "../../components/Modal/ModalExclude";
 
 const Dashboard = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const { modal, modalExclude } = useContext(AuthContext);
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
@@ -28,6 +33,8 @@ const Dashboard = () => {
       ) : (
         <>
           {" "}
+          {modalExclude && <ModalExclude />}
+          {modal && <Modal />}
           <Header />
           {isSearchOpen && (
             <SearchContainer>

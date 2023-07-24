@@ -3,8 +3,11 @@ import points from "../../images/svg/points.svg";
 import profile from "../../images/png/profile.png";
 
 import { RadioButton, RadioInput } from "../../styles/InputRadio/styles";
+import { useContext } from "react";
+import { AuthContext } from "../../context/authcontext";
 
 const CardOneToOne = () => {
+  const { setModal } = useContext(AuthContext);
   return (
     <Card>
       <DivTitleCard>
@@ -22,7 +25,7 @@ const CardOneToOne = () => {
           <span>13/11/2023 - 09:00-12:30</span>
         </DivText>
 
-        <img src={points} alt="" />
+        <img onClick={() => setModal(true)} src={points} alt="" />
       </DivTitleCard>
 
       <ListPersons>

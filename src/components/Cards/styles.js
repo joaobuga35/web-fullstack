@@ -24,6 +24,10 @@ const DivTitleCard = styled.div`
   align-items: center;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--color-border-2);
+
+  img {
+    cursor: pointer;
+  }
 `;
 
 const DivText = styled.div`

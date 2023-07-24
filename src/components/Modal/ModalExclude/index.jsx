@@ -13,7 +13,9 @@ const ModalExclude = () => {
     <ModalWrapper>
       <ModalContainer>
         <DivTitleModalExclude>
-          <span onClick={() => setModalExclude(false)}>X</span>
+          <span className="buttonEx" onClick={() => setModalExclude(false)}>
+            X
+          </span>
           <span>Excluir conversa 1:1</span>
           <ButtonModalExclude>Excluir</ButtonModalExclude>
         </DivTitleModalExclude>

@@ -8,6 +8,10 @@ const DivTitleModalExclude = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .buttonEx {
+    cursor: pointer;
+  }
 `;
 
 const ButtonModalExclude = styled.button`

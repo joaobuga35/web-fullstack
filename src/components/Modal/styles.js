@@ -8,6 +8,16 @@ const ModalWrapper = styled.div`
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+
+  @media (min-width: 375px) {
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const ModalContainer = styled.div`
   width: 320px;
@@ -17,8 +27,8 @@ const ModalContainer = styled.div`
   border-radius: 20px;
   z-index: 10;
 
-  @media (max-width: 375px) {
-    width: 32.9rem;
+  @media (min-width: 375px) {
+    width: 375px;
   }
 `;
 

@@ -5,6 +5,7 @@ import oneToOne from "../../images/svg/oneToOne.svg";
 import talk from "../../images/svg/talk.svg";
 import task from "../../images/svg/task.svg";
 import out from "../../images/svg/out.svg";
+import { Link } from "react-router-dom";
 
 const MenuHamburguer = ({ open, setOpen }) => {
   return (
@@ -34,7 +35,7 @@ const MenuHamburguer = ({ open, setOpen }) => {
 
       <section>
         <img src={out} alt="botão para sair" />
-        <span>Sair</span>
+        <Link to={"/"}>Sair</Link>
       </section>
     </MenuSecret>
   );

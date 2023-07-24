@@ -86,7 +86,8 @@ const MenuSecret = styled.nav`
     cursor: pointer;
     margin-top: 225px;
 
-    span {
+    a {
+      text-decoration: none;
       color: var(--gray-400);
       font-size: 15px;
       font-style: normal;

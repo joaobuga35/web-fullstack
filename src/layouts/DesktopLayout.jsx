@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import AsideBar from "../components/Aside";
 import CardOneToOne from "../components/Cards";
 import CardNotion from "../components/Cards/CardNotion";
@@ -9,10 +10,16 @@ import {
   ContainerContentDesktop,
   MainContentDesktop,
 } from "../styles/Container/styles";
+import { AuthContext } from "../context/authcontext";
+import Modal from "../components/Modal";
+import ModalExclude from "../components/Modal/ModalExclude";
 
 const DesktopLayout = () => {
+  const { modal, modalExclude } = useContext(AuthContext);
   return (
     <ContainerContentDesktop>
+      {modalExclude && <ModalExclude />}
+      {modal && <Modal />}
       <AsideBar />
       <MainContentDesktop>
         <HeaderDesktop />

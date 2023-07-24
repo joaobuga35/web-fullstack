@@ -9,6 +9,14 @@ export const RoutesMain = () => {
       <Route path="/" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route
+        path="/d"
+        element={
+          <div>
+            <h2>Poppins</h2>
+          </div>
+        }
+      />
     </Routes>
   );
 };

@@ -41,9 +41,10 @@ export default createGlobalStyle`
     width: 100vw;
     height: 100vh;
   }
-  body, input, button, textarea {
-    font-family: 'Poppins', sans-serif;
+  body, input, button, textarea{
+    font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    overflow-x: hidden;
   }
   h1, h2, h3, h4, h5, h6, strong {
     font-weight: 500;
